@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: -webkit-fill-available;
+}
+/*body{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: -webkit-fill-available;
+}*/
+.main{
+
+    flex: 1;
+    overflow: scroll;
+    width: 100%;
+    background:url(bg.avif);
+    background-position: center;
+    background-size: cover;
+    height: 105vh;
+    position: absolute;
+    font-family: sans-serif;
+
+}
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: -1%;
+    margin-left: -4%;
+}
+
+.info{
+    margin-left: 7%;
+    margin-top: 2%;
+    max-width:500px ;
+    color: #555;
+    /*margin-bottom: 30%;*/
+
+}
+.info h2{
+    color: #333;
+    margin-left: -19%;
+    font-size: 22px;
+}
+.info h1{
+    font-size: 30px;
+}
+.info h1 span{
+    color: #7d2ae8;
+}
+.info h4{
+    /*font-size: 24px;
+    color: rgb(36,32 ,30);*/
+    font-size: 24px;
+}
+.info h4 span{
+    color: #7d2ae8;
+}
+.info p{
+    margin-left: 0;
+    font-size: 15px;
+    color: #555;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 10px 0 ;
+}
+.info a{
+    /*text-decoration: none;
+    color: white;
+    background: rgb(36, 32, 30);
+    margin: 10px 18px;
+    border-radius: 5px;
+    display: inline-block;*/
+
+    color: #fff;
+    text-decoration:none; 
+    padding: 8px 20px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border:2px solid blueviolet;
+    font-weight: 500;
+    display: inline-block;
+    transition: .3s;
+}
+.info a:hover{
+    color: #7d2ae8;
+    background: transparent;
+}
+.education {
+    margin-left: 4%;
+    margin-top: -1%;
+    color: #555;
+    padding: 20px;
+}
+.education h1{
+    margin-left: -5%;
+    color: #333;
+    font-size: 20px;
+}
+
+.qualification h2 {
+    margin-left: 2%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.qualification p {
+    color: #333;
+    margin-left: 2%;
+    font-style: italic;
+} 
+.skills{
+    margin-left: 4%;
+    margin-top: -1%;
+    max-width:500px ;
+    color: #333;
+}
+.skills h1{
+    margin-left: -10%;
+    font-size: 22px;
+}
+.skills ul {
+    /*top: 50%; 
+    left:8%;*/
+    font-size: 15px;
+    color: #555;
+    margin-top: 5px;
+    margin-left: 8%;
+    top: 40%;
+    left: 15%;
+}
+.skills li{
+    display:block;
+
+    list-style: none;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.project{
+    margin-left: 2%;
+    top: 35%;
+    max-width:500px ;
+    color: #555;
+}
+.project h1{
+    color: #333;
+    margin-left: -5%;
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+p {
+    font-size: 15px;
+    color: #555;
+    margin-left: 10%;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 10px 0 ;
+}
+.project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #08c7e9;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 9%;
+}
+.contact{
+    margin-left: 4%;
+    margin-top: 1%;
+    max-width:500px ;
+    color: #333;
+}
+.contact h1{
+    margin-left: -11%;
+    font-size: 22px;
+}
+.contact ul{
+    /*bottom: 10%;
+    left:5%;*/
+
+    font-size: 15px;
+    color: #555;
+    margin-top: 5px;
+    margin-left: 4%;
+    top: 40%;
+    left: 15%;
+}
+.contact li{
+    display: block;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+/*.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right:100px;
+    bottom: 0;
+}
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-50%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+.image:hover .boy{
+    left: 60%;
+}*/
+.social-icons {
+    position: absolute;
+    bottom: -1%;
+    padding-left: 5%;
+    font-size: 20px;
+    
+}
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    bottom: 3%;
+    transition: .3s;
+    color: #7d2ae8;
+}
+.social-icons a:hover{
+    transform: translateY(-5px);
+    
+}
