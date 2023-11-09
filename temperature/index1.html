@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Temperature Converter</title>
+        <style type="text/css">
+            .sty{
+                font-family: 'Calibri';
+                font-style: oblique;
+            }
+            #selectVal{
+                font-family: 'Calibri';
+                font-style: oblique;
+            }
+            .choice{
+                font-family: 'Calibri';
+                font-style: oblique;
+            }
+            .head{
+                font-family: 'Calibri';
+                font-style: inherit;
+                font-size: 30px;
+                text-align: center;
+                margin-left: 125px;
+                margin-top: 50px;
+                color: black;
+            }
+            #output{
+                size: 10px;
+            }
+          
+
+        </style>
+    </head>
+    <body topmargin="30" leftmargin="50" rightmargin="30" bgcolor="skyblue">
+        <h1 class="head">Temperature Converter Tool</h1>
+        <form>
+                <div align="center" style="width: 500px; height: 180px; border: 3px solid black; margin-left: 35%; margin-top: 10sspx; background-color: aqua; padding-top: 15px;" >
+                    <label for="temp" class="sty" size=5px><font size="5">Enter Temperature:</font></label>
+                    <input type="number" size="20" value="" id="temp"><br><br>
+                    <label><font size="5" class="choice" >Select Conversion Type</font></label>
+                    <select id="selectVal" >
+                        <option value="select choice">select option</option>
+                        <option value="Fahrenheit">Celsius to Fahrenheit</option><option value="Celsius">Fahrenheit to Celsius</option>
+                    </select><br><br><br>
+                    <button type="button" onclick="convert()" id="output">Convert</button>
+
+                </div>      
+        </form>
+        <script language="javascript">
+            function convert(){
+                var inputValue=document.getElementById("temp").value;
+                var seleVal = document.getElementById("selectVal").value;
+                //window.alert("Input value is:"+inputValue);
+                //document.write("Selected value:"+seleVal);
+                //window.alert("Selected value:"+seleVal);
+                if(inputValue != 0){
+                    if(seleVal == 'Fahrenheit' ){
+                        //window.alert("Selected value:"+seleVal);
+                        let newTemp=((inputValue)*(9/5)+32);
+                        window.alert("New Temperature is : "+newTemp+"\xB0"+"F");
+                    }
+                    else{
+                        //window.alert("Selected value:"+seleVal);
+                        let celTemp = ((inputValue - 32)*(5/9));
+                        window.alert("New Temperature is : "+celTemp+"\xB0"+"C");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
